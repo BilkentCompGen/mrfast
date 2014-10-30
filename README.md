@@ -7,3 +7,4 @@ mrFAST is a read mapper that is designed to map short reads to reference genome 
 
 NOTE: mrFAST is developed for Illumina, thus requires all reads to be at the same length. For paired-end reads, lengths of mates may be different from each other, but each "side" should have a uniform length.
 
+Wiki page: https://github.com/BilkentCompGen/mrfast/wiki

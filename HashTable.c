@@ -286,7 +286,7 @@ void finalizeLoadingIHashTable()
 }
 
 /**********************************************/
-int  loadIHashTable(double *loadTime, int errThreshould)
+int  loadIHashTable(double *loadTime)
 {
   double startTime = getTime();
   unsigned char extraInfo = 0;
@@ -426,7 +426,6 @@ int initLoadingHashTable(char *fileName)
 	
   tmp = fread(&WINDOW_SIZE, sizeof(WINDOW_SIZE), 1, _ih_fp);
 
-  fprintf(stderr, "Hash table kmer length: %d\n", WINDOW_SIZE);
   configHashTable();
 
   if (_ih_maxHashTableSize != pow(4, WINDOW_SIZE))

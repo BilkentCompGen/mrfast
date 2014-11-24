@@ -66,7 +66,7 @@ int				initLoadingHashTable(char *fileName);
 HashTable		*getHashTable();
 
 void 			(*generateHashTable)(char *fileName, char *indexName);
-int				(*loadHashTable)(double *loadTime, int errThreshould);
+int				(*loadHashTable)(double *loadTime);
 void			(*finalizeLoadingHashTable)();
 unsigned int	*(*getCandidates)(int hv);
 

@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
 	  do
 	    {
 
-	      flag = loadHashTable ( &tmpTime, errThreshold);  			// Reading a fragment
+	      flag = loadHashTable ( &tmpTime);  			// Reading a fragment
 	      curGen = getRefGenomeName();
 
 	      // First Time
@@ -256,7 +256,7 @@ int main(int argc, char *argv[])
 	  do
 	    {
 
-	      flag = loadHashTable ( &tmpTime , errThreshold);  			// Reading a fragment
+	      flag = loadHashTable ( &tmpTime);  			// Reading a fragment
 	      curGen = getRefGenomeName();
 
 	      // First Time

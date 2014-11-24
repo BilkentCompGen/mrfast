@@ -97,7 +97,7 @@ int parseCommandLine (int argc, char *argv[])
   int o;
   int index;
   char *fastaFile = NULL;
-  
+
   readGroup[0] = 0;
   sampleName[0] = 0;
   libName[0] = 0;
@@ -118,6 +118,7 @@ int parseCommandLine (int argc, char *argv[])
       {"search",	required_argument,  0,			's'},
       {"help",		no_argument,	    0,			'h'},
       {"version",	no_argument,	    0,			'v'},
+      {"quiet",	        no_argument,	    0,			'q'},
       {"seq",		required_argument,  0,			'x'},
       {"seq1",		required_argument,  0,			'x'},
       {"seq2",		required_argument,  0,			'y'},
@@ -209,6 +210,10 @@ int parseCommandLine (int argc, char *argv[])
 	case 'v':
 	  fprintf(stderr, "mrFAST %s.%s with FastHASH\n", versionNumber, versionNumberF);
 	  return 0;
+	  break;				
+	case 'q':
+	  if (freopen("/dev/null", "w", stderr) == NULL)
+	    fprintf(stderr, "Quiet mode failure.\n");
 	  break;				
 	case '?': 
 	  fprintf(stderr, "Unknown parameter: %s\n", longOptions[index].name);

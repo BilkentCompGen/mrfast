@@ -10,34 +10,34 @@ mrFAST : Micro-Read Fast Alignment Search Tool. Enhanced with FastHASH.
 Usage: mrfast [options]
 
 ## General Options:  
-&nbsp; **-v|--version**		Current Version.  
-&nbsp; **-h**			Shows the help file.  
+&nbsp; **-v|--version**&nbsp; &nbsp; &nbsp; &nbsp; Current Version.  
+&nbsp; **-h**&nbsp; &nbsp; &nbsp; &nbsp; Shows the help file.  
 
 
 ## Indexing Options:
-&nbsp; **--index** [file]		Generate an index from the specified fasta file.   
-&nbsp; **--ws** [int]		Set window size for indexing (default:12 max:14).  
+&nbsp; **--index** [file]&nbsp; &nbsp; &nbsp; &nbsp; Generate an index from the specified fasta file.   
+&nbsp; **--ws** [int]&nbsp; &nbsp; &nbsp; &nbsp; Set window size for indexing (default:12 max:14).  
 
 
 ## Searching Options:
-&nbsp; **--search** [file]	Search in the specified genome. Provide the path to the fasta file. Index file should be in the same directory.  
-&nbsp; **--pe** 			Search will be done in Paired-End mode.  
-&nbsp; **--seq** [file]		Input sequences in fasta/fastq format [file]. If paired end reads are interleaved, use this option.  
-&nbsp; **--seq1** [file]		Input sequences in fasta/fastq format [file] (First file). Use this option to indicate the first file of paired end reads.   
-&nbsp; **--seq2** [file]		Input sequences in fasta/fastq format [file] (Second file). Use this option to indicate the second file of paired end reads.    
-&nbsp; **-o** [file]		Output of the mapped sequences. The default is "output".  
-&nbsp; **-u** [file]		Save unmapped sequences in fasta/fastq format.  
-&nbsp; **--best**   		Only the best mapping from all the possible mapping is returned.  
-&nbsp; **--seqcomp** 		Indicates that the input sequences are compressed (gz).  
-&nbsp; **--outcomp** 		Indicates that output file should be compressed (gz).  
-&nbsp; **-e** [int]		Maximum allowed edit distance (default 4% of the read length).  
-&nbsp; **--min** [int]		Min distance allowed between a pair of end sequences.  
-&nbsp; **--max** [int]		Max distance allowed between a pair of end sequences.  
-&nbsp; **--maxoea** [int]		Max number of One End Anchored (OEA) returned for each read pair. We recommend 100 or above for NovelSeq use. Default = 100.  
-&nbsp; **--maxdis** [int]		Max number of discordant map locations returned for each read pair. We recommend 300 or above for VariationHunter use. Default = 300.  
-&nbsp; **--crop** [int]		Trim the reads to the given length.  
-&nbsp; **--sample** [string]	Sample name to be added to the SAM header (optional).  
-&nbsp; **--rg** [string]		Read group ID to be added to the SAM header (optional).  
-&nbsp; **--lib** [string]		Library name to be added to the SAM header (optional).  
+&nbsp; **--search** [file]&nbsp; &nbsp; &nbsp; &nbsp; Search in the specified genome. Provide the path to the fasta file. Index file should be in the same directory.  
+&nbsp; **--pe**&nbsp; &nbsp; &nbsp; &nbsp; Search will be done in Paired-End mode.  
+&nbsp; **--seq** [file]&nbsp; &nbsp; &nbsp; &nbsp; Input sequences in fasta/fastq format [file]. If paired end reads are interleaved, use this option.  
+&nbsp; **--seq1** [file]&nbsp; &nbsp; &nbsp; &nbsp; Input sequences in fasta/fastq format [file] (First file). Use this option to indicate the first file of paired end reads.   
+&nbsp; **--seq2** [file]&nbsp; &nbsp; &nbsp; &nbsp; Input sequences in fasta/fastq format [file] (Second file). Use this option to indicate the second file of paired end reads.    
+&nbsp; **-o** [file]&nbsp; &nbsp; &nbsp; &nbsp; Output of the mapped sequences. The default is "output".  
+&nbsp; **-u** [file]&nbsp; &nbsp; &nbsp; &nbsp; Save unmapped sequences in fasta/fastq format.  
+&nbsp; **--best**&nbsp; &nbsp; &nbsp; &nbsp; Only the best mapping from all the possible mapping is returned.  
+&nbsp; **--seqcomp**&nbsp; &nbsp; &nbsp; &nbsp; Indicates that the input sequences are compressed (gz).  
+&nbsp; **--outcomp**&nbsp; &nbsp; &nbsp; &nbsp; Indicates that output file should be compressed (gz).  
+&nbsp; **-e** [int]&nbsp; &nbsp; &nbsp; &nbsp; Maximum allowed edit distance (default 4% of the read length).  
+&nbsp; **--min** [int]&nbsp; &nbsp; &nbsp; &nbsp; Min distance allowed between a pair of end sequences.  
+&nbsp; **--max** [int]&nbsp; &nbsp; &nbsp; &nbsp; Max distance allowed between a pair of end sequences.  
+&nbsp; **--maxoea** [int]&nbsp; &nbsp; &nbsp; &nbsp; Max number of One End Anchored (OEA) returned for each read pair. We recommend 100 or above for NovelSeq use. Default = 100.  
+&nbsp; **--maxdis** [int]&nbsp; &nbsp; &nbsp; &nbsp; Max number of discordant map locations returned for each read pair. We recommend 300 or above for VariationHunter use. Default = 300.  
+&nbsp; **--crop** [int]&nbsp; &nbsp; &nbsp; &nbsp; Trim the reads to the given length.  
+&nbsp; **--sample** [string]&nbsp; &nbsp; &nbsp; &nbsp; Sample name to be added to the SAM header (optional).  
+&nbsp; **--rg** [string]&nbsp; &nbsp; &nbsp; &nbsp; Read group ID to be added to the SAM header (optional).  
+&nbsp; **--lib** [string]&nbsp; &nbsp; &nbsp; &nbsp; Library name to be added to the SAM header (optional).  
 
 

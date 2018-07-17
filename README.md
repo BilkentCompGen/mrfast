@@ -10,8 +10,8 @@ mrFAST : Micro-Read Fast Alignment Search Tool. Enhanced with FastHASH.
 Usage: mrfast [options]
 
 ## General Options:  
- -v|--version		Current Version.  
- -h			Shows the help file.  
+&nbsp; -v|--version		Current Version.  
+&nbsp; -h			Shows the help file.  
 
 
 ## Indexing Options:

@@ -1,4 +1,4 @@
-# mrfast
+# mrFAST
 
 ## micro-read Fast Alignment Search Tool
 
@@ -8,7 +8,18 @@ mrFAST is a read mapper that is designed to map short reads to reference genome 
 
 mrFAST : Micro-Read Fast Alignment Search Tool. Enhanced with FastHASH.
 
-Usage:
+# Fetching and building mrFAST
+
+Pretty simple. To fetch:
+
+	git clone https://github.com/BilkentCompGen/mrfast.git
+
+To build:
+
+	cd mrfast
+	make
+
+# Usage:
 
 	mrfast [options]
 

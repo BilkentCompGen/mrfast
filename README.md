@@ -57,3 +57,21 @@ To build:
 	--lib [string]    Library name to be added to the SAM header (optional).  
 
 
+## Running mrFAST via Docker
+
+To build a Docker image:
+
+	cd docker
+	docker build . -t mrfast:latest
+
+Your image named "mrfast" should be ready. You can run tardis using this image by
+
+	docker run --user=$UID -v /path/to/inputs:/input -v /path/to/outputdir:/output mrfast [args]
+- ```[args]``` are usual arguments you would pass to tardis executable. Be careful about mapping. You need to specify folders respective to container directory structure.
+- You need to map host machine input and output directory to responding volume directories inside the container. These options are specified by '-v' argument.
+- Docker works with root user by default. "--user" option saves your outputs.
+
+Sample Docker-based command line assuming the working directory is /home/mrfast/samplerun:
+
+	docker run --user=$UID -v /home/mrfast/samplerun/:/input -v /home/mrfast/samplerun:/output mrfast --search /input/human_g1k_v37.fasta --seq1 /input/f1.fastq --seq2 /input/f2.fastq --pe --min 0 --max 1000 -o /output/test.sam
+

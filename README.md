@@ -64,7 +64,7 @@ To build a Docker image:
 	cd docker
 	docker build . -t mrfast:latest
 
-Your image named "mrfast" should be ready. You can run tardis using this image by
+Your image named "mrfast" should be ready. You can run mrfast using this image by
 
 	docker run --user=$UID -v /path/to/inputs:/input -v /path/to/outputdir:/output mrfast [args]
 - ```[args]``` are usual arguments you would pass to tardis executable. Be careful about mapping. You need to specify folders respective to container directory structure.
